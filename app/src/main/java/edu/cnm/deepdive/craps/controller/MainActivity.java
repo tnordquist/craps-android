@@ -1,8 +1,7 @@
 package edu.cnm.deepdive.craps.controller;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
@@ -12,7 +11,6 @@ import edu.cnm.deepdive.craps.R;
 import edu.cnm.deepdive.craps.model.Game;
 import edu.cnm.deepdive.craps.model.State;
 import edu.cnm.deepdive.craps.view.ImageRollAdapter;
-import edu.cnm.deepdive.craps.view.SimpleRollAdapter;
 import java.util.List;
 import java.util.Random;
 import org.apache.commons.rng.simple.JDKRandomBridge;
@@ -137,7 +135,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void run() {
       while (running) {
-        for (int i = 0; i < 5000; i++) {
+        for (int i = 0; i < 8000; i++) {
           game.reset();
           game.play();
         }
